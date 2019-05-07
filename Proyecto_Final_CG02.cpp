@@ -89,6 +89,12 @@ CTexture text10;
 CTexture text11;
 CTexture text12;
 //////////////////////////////////////////
+CTexture text18; //Tubo Azul Electrico
+CTexture text19;
+CTexture text20;
+CTexture text21;
+/////////////////////////////////////////
+
 CTexture tree;
 
 CFiguras fig1;
@@ -109,6 +115,13 @@ CFiguras fig10; //Bandera carreras
 CFiguras fig11; //Tubo azul
 CFiguras fig12; //Puesto
 CFiguras fig13; //Puesto 2
+/////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////
+CFiguras fig19;
+//CFiguras fig10;
+CFiguras fig20;
+CFiguras fig21;
 /////////////////////////////////////////////////////////////////
 //Figuras de 3D Studio
 CModel kit;
@@ -2124,6 +2137,175 @@ void ciudad ()
 
 		//////////////////////////////////// Fin Puestos Derechos///////////////////////////////////////
 
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		glPushMatrix();//Tubo 
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(20, 30, -30.0);
+		glRotatef(90, 0, 1, 0);
+		glScalef(15.5, 1.0, 0.1);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+
+
+		glPushMatrix();//Tubo 2
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(25, 30, -30.0);
+		glRotatef(90, 0, 1, 0);
+		glScalef(15.5, 1.0, 0.1);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		///////////////////////
+
+		glPushMatrix();//Tubo 3
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(20, 1, -30.0);
+		glRotatef(90, 0, 1, 0);
+		glScalef(15.5, 1.0, 0.1);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		glPushMatrix();//Tubo 4
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(25, 1, -30.0);
+		glRotatef(90, 0, 1, 0);
+		glScalef(15.5, 1.0, 0.1);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		//////////////
+
+		glPushMatrix();//Tubo 9
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(20, 16, -45.0);
+		glRotatef(120, 1, 1, 1);
+		glScalef(15.5, 1.0, 0.1);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		glPushMatrix();//Tubo 10
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(25, 16, -45.0);
+		glRotatef(120, 1, 1, 1);
+		glScalef(15.5, 1.0, 0.1);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		///////////////
+
+		glPushMatrix();//Tubo 9
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(20, 16, -15.0);
+		glRotatef(120, 1, 1, 1);
+		glScalef(16.0, 1.0, 0.1);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		glPushMatrix();//Tubo 10
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(25, 16, -15.0);
+		glRotatef(120, 1, 1, 1);
+		glScalef(16.0, 1.0, 0.1);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		////////////////////////////
+
+		glPushMatrix(); //Cabina1
+		glTranslatef(22.5, 16, -45.0);
+		fig19.esfera(2.8, 12, 20, text20.GLindex);
+		glPushMatrix();
+		glPopMatrix();
+
+		glPopMatrix();
+
+
+		glPushMatrix(); //Cabina4
+		glTranslatef(22.5, 16, -15.0);
+		fig19.esfera(2.8, 12, 20, text20.GLindex);
+		glPushMatrix();
+		glPopMatrix();
+		glPopMatrix();
+
+		glPushMatrix(); //Cabina4
+		glTranslatef(22.5, 30, -30.0);
+		fig19.esfera(2.8, 12, 20, text20.GLindex);
+		glPushMatrix();
+		glPopMatrix();
+		glPopMatrix();
+
+		glPushMatrix(); //Cabina4
+		glTranslatef(22.5, 1, -30.0);
+		fig19.esfera(2.8, 12, 20, text20.GLindex);
+		glPushMatrix();
+		glPopMatrix();
+
+		glPopMatrix();
+
+		///////////////////////////
+
+		glPushMatrix();//Tubo 1
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(16, 8, -30.0);
+		glRotatef(120, 1, 1, 1);
+		glScalef(10.5, 1.0, 0.5);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		glPushMatrix();//Tubo 2
+		glColor3f(1.0, 2.0, 1.0);
+		glTranslatef(28, 8, -30.0);
+		glRotatef(120, 1, 1, 1);
+		glScalef(10.5, 1.0, 0.5);
+		glDisable(GL_LIGHTING);
+		fig19.prisma(2.0, 2.0, 1, text18.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		/////////////////////////////////////////////////////////
+
+		//Casa del terror
+
+		glPushMatrix();
+		glTranslatef(-90, 50.0, -20.0);
+		glRotatef(90, 1, 0, 0);
+		glScalef(6, 6.0, 6);
+		glDisable(GL_LIGHTING);
+		fig21.prisma(2.0, 2.0, 1, text19.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
+		//Maccdonalds
+
+		glPushMatrix();
+		glTranslatef(7, 3.0, -40.0);
+		glRotatef(90, 1, 0, 0);
+		glScalef(8, 6.0, 6);
+		glDisable(GL_LIGHTING);
+		fig21.prisma(2.0, 2.0, 1, text21.GLindex);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+
 }
 
 
@@ -2429,6 +2611,25 @@ void InitGL ( GLvoid )     // Inicializamos parametros
 	text12.LoadBMP("montana_rusa/puesto2.bmp"); ////
 	text12.BuildGLTexture();                /////////
 	text12.ReleaseImage();                   ////////
+	////////////////////////////////////////////////
+
+	///////////////////////////////////////////////
+
+	text18.LoadBMP("montana_rusa/rueda.bmp");
+	text18.BuildGLTexture();
+	text18.ReleaseImage();
+
+	text19.LoadBMP("montana_rusa/mac.bmp");
+	text19.BuildGLTexture();
+	text19.ReleaseImage();
+
+	text21.LoadBMP("montana_rusa/terror.bmp");
+	text21.BuildGLTexture();
+	text21.ReleaseImage();
+
+	text20.LoadBMP("montana_rusa/planta.bmp");
+	text20.BuildGLTexture();
+	text20.ReleaseImage();
 	////////////////////////////////////////////////
 
 	tree.LoadTGA("Tree.tga");
